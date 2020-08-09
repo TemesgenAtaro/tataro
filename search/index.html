@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=en">
+
+    <style>
+
+        div.fixed {
+            position: fixed;
+            margin-left: 40%;
+            margin-top: 10%;
+
+        }
+
+        button{
+            background-color: rgb(243, 240, 240);
+            border: none;
+            font-size: 14px;
+
+        }
+       
+
+        #righties{
+            background-color: white; 
+            position: absolute;
+            margin-top: 0.7%;
+            border: thick;
+        }
+        #righties:hover{background-color: rgb(243, 240, 240);
+                        text-decoration-line: underline;}
+
+
+        #searchbutton   {
+            background-color: rgb(243, 240, 240);
+            border-style: hidden;
+            border-radius: 4px; border-width: 1px;
+            padding: 12px;
+            color: rgb(105, 105, 105);
+    }
+
+
+    #searchbutton:hover{border-style:solid;border-color: lightgrey; color: black;}
+
+
+    #textbar{margin-top: 18px; border-radius: 36px; height: 40px; width: 560px; margin-left: -129px; border-width:0.01pt; text-indent: 5%;border-color: #dfe1e5;   }
+    #textbar:hover{border-style: solid; }
+
+    </style>
+
+    <head>
+        <title>Google</title>
+    </head>
+    <body>
+        <button id= righties action="https://google.com/search/image" style="margin-left: 85%;" onclick="window.location.href='image search.html';"> Images</button> 
+        <button id= righties action="https://google.com/search/image" style="margin-left: 90%;" onclick="window.location.href='advanced.html';"> Advanced</button>
+       
+        <div class="fixed">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="margin-top: -1%; margin-left: 2%;">
+
+
+
+
+        <form action="https://google.com/search">
+            <input id=textbar type=text name=q><br>
+            <button id=searchbutton style="margin-top: 30px;" type=submit formaction="https://google.com/search">Google Search</button>
+            <button id=searchbutton type="submit" name="btnI" value="1" style="margin-left: 10px;" >I'm feeling lucky</button>
+
+
+        </form>
+       
+        </div>
+    </body>
+</html>

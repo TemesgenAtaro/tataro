@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+    </head>
+    <style>
+    #alignments {margin: 10px 40px;}
+    .header{
+        position: relative;
+        width: 101%;
+        height: 70px;
+        display: block;
+        left: 0;
+        top: 0;
+        right: 10px;
+        margin: -10px;
+        padding: 0;
+        border: 0;
+        text-decoration: none;
+        background-color: rgba(238, 238, 238, 0.863);}
+    
+    body{font-family:arial,sans-serif}
+    
+    #righties{
+            background-color: rgba(238, 238, 238, 0.863); 
+            position: absolute;
+            margin-left: 90%;
+            margin-top: 1%;
+            border: thick;
+        }
+    #righties:hover{text-decoration-line: underline;}
+
+    #clip{position: absolute;
+    margin-top: -13px;
+    padding-left: 18px;
+    padding-right: 20px;
+    clip: rect(30px 110px 90px -25px);
+    }
+    
+    #appbar{color: #d93025;
+    height:80px;
+                font-size: 22px;
+                vertical-align: middle;
+                border: solid;
+                border-bottom-color: rgba(238, 238, 238, 0.863);
+                border-width: 1px;
+                width: 101%;
+                border-top-color: white;
+                border-left-color: white;
+                border-right-color: white;
+                }
+
+#finder {padding-left: 2px;  font-size: 16px; color: #333; font-size:88%; font-weight: 500; display: table-cell; vertical-align: middle;    }
+    
+#textboxes{position: absolute;
+    left: 250px;
+    border-radius: 1px; width: 350px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 30px; 
+    padding: 1px 8px;
+    outline-color: rgb(116, 192, 240);}
+    #textboxes:hover{outline-color: blue;}
+    </style>
+    <body>  
+        
+        <div class="header"> 
+            <a href="https://www.google.com/webhp?tab=ww&authuser=0" title= "Go to Google Home"><img id= "clip" src="i1_1967ca6a.png"></a>
+    <button id=righties action="https://google.com/search/image" onclick="window.location.href='index.html';"> Google</button>      
+    </div>
+    <div id="alignments">
+    <div id="appbar"><br><label>Advanced Search</label>   </div>
+    
+    <div id="finder" style=" height: 330px;">
+        <form action="google.com/advanced_search/search" name="f">
+        <span>Find pages with... </span> 
+        <label style="font-size: 14px; "> <br><br>all these words: </label>
+        <input type=text id="textboxes"> 
+            
+        <label style="font-size: 14px; "> <br><br>this exact word or phrase: </label>
+        <input type=text id="textboxes"> 
+            
+        <label style="font-size: 14px; "> <br><br>any of these words: </label>
+        <input type=text id="textboxes"> 
+            
+        <label style="font-size: 14px; "> <br><br>none of these words: </label>
+        <input type=text id="textboxes"> 
+        
+        <label style="font-size: 14px; "> <br><br> numbers ranging from: </label>
+        <input type=text id="textboxes" style="width: 100px;"> <label style="font-size: 14px; paddding-left: 15px;">to </label><input type=text id="textboxes" style="width: 100px;">
+       
+        
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>
